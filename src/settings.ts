@@ -2,10 +2,10 @@ import { SettingSchemaDesc } from '@logseq/libs/dist/LSPlugin.user'
 
 export const settings: SettingSchemaDesc[] = [
   {
-    key: 'sampleSetting',
-    type: 'string',
-    default: 'This is a sample setting',
-    title: 'Sample Setting',
-    description: 'Modify settings.ts accordingly.',
+    key: 'enableOnStartup',
+    type: 'boolean',
+    default: false,
+    title: 'Enable on Startup',
+    description: 'Automatically enable Doc Mode when Logseq starts (restores previous state)',
   },
 ]
