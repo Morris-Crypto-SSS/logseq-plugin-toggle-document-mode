@@ -11,6 +11,7 @@ const main = async () => {
 
   // Check if plugin is being used on the DB version
   const isDbGraph = await logseq.App.checkCurrentIsDbGraph()
+  console.log(isDbGraph)
 }
 
 logseq.useSettingsSchema(settings).ready(main).catch(console.error)

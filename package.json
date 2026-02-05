@@ -1,20 +1,20 @@
 {
-  "name": "<insert-plugin-name>",
-  "author": "benjypng",
+  "name": "logseq-plugin-toggle-document-mode",
+  "author": "Morris-Crypto-SSS",
   "description": "",
   "license": "MIT",
   "logseq": {
-    "id": "<insert-plugin-name>",
+    "id": "logseq-plugin-toggle-document-mode",
     "title": "<insert-plugin-name>",
     "icon": "./icon.svg",
     "main": "dist/index.html"
   },
   "scripts": {
-    "dev": "bunx vite",
-    "build": "bunx vite build",
-    "build:plugin": "bunx eslint . --fix && bunx tsc && bunx vite build",
+    "dev": "vite",
+    "build": "vite build",
+    "build:plugin": "eslint . --fix && tsc && vite build",
     "prepare": "husky",
-    "lint:precommit": "echo \"Running eslint\" && bunx eslint . --fix && echo \"Running tsc\" && tsc && echo \"Running build\" && bun run build"
+    "lint:precommit": "echo \"Running eslint\" && eslint . --fix && echo \"Running tsc\" && tsc && echo \"Running build\" && npm run build"
   },
   "release": {
     "branches": [
