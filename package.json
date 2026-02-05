@@ -1,11 +1,11 @@
 {
   "name": "logseq-plugin-toggle-document-mode",
   "author": "Morris-Crypto-SSS",
-  "description": "",
+  "description": "Toggle document mode to prevent accidental edits and view notes like a document",
   "license": "MIT",
   "logseq": {
     "id": "logseq-plugin-toggle-document-mode",
-    "title": "<insert-plugin-name>",
+    "title": "Doc Mode",
     "icon": "./icon.svg",
     "main": "dist/index.html"
   },
@@ -25,7 +25,7 @@
         "@semantic-release/github",
         {
           "assets": [
-            "<insert-plugin-name>.zip"
+            "logseq-plugin-doc-mode.zip"
           ]
         }
       ]
